@@ -47,3 +47,6 @@ var ErrCommandNotFound = errors.New("command not found")
 // ErrNoVolumePath gets returned when trying to call a *Volume func without providing a valid volume path, e.g. an
 // empty string. This error is no VeraCrypt error
 var ErrNoVolumePath = errors.New("no volume path provided")
+
+// ErrPathAlreadyExists gets returned when creating a volume and the path for the volume already exists
+var ErrVolumePathAlreadyExists = errors.New("the path for creating the volume already exists")
