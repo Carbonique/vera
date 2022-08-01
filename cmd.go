@@ -2,7 +2,6 @@ package vera
 
 import (
 	"bytes"
-	"fmt"
 	"os/exec"
 	"strings"
 )
@@ -17,7 +16,7 @@ func newCommand(args ...Param) (cmd *exec.Cmd, stdout, stderr *bytes.Buffer) {
 	cmd = exec.Command("veracrypt", genArgs(append([]Param{textOnly, nonInteractive}, args...))...)
 	cmd.Stdout = stdout
 	cmd.Stderr = stderr
-	fmt.Println(cmd)
+
 	return
 }
 
