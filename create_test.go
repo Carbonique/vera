@@ -50,7 +50,7 @@ func (suite CreateTestSuite) TestCreateExistingVolume() {
 		"aes",
 		"sha512",
 		"ext4",
-		"20m",
+		"10m",
 		"123456789",
 	)
 
@@ -59,7 +59,7 @@ func (suite CreateTestSuite) TestCreateExistingVolume() {
 		"aes",
 		"sha512",
 		"ext4",
-		"20m",
+		"10m",
 		"123456789",
 	)
 
